@@ -1,0 +1,17 @@
+def androidSupportVersion = '27.1.1'
+def androidConstraintLayout = '1.1.2'
+
+ext {
+    compileSdkVersion = 27
+    minSdkVersion = 21
+    targetSdkVersion = 27
+
+    appcompatV7 = "com.android.support:appcompat-v7:$androidSupportVersion"
+    design = "com.android.support:design:$androidSupportVersion"
+    recyclerviewV7 = "com.android.support:recyclerview-v7:$androidSupportVersion"
+    cardviewV7 = "com.android.support:cardview-v7:$androidSupportVersion"
+    constraintLayout = "com.android.support.constraint:constraint-layout:$androidConstraintLayout"
+
+    versionCode = 1
+    versionName = "1.0"
+}
