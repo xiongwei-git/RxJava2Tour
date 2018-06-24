@@ -9,13 +9,50 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <ScrollView
+        android:id="@+id/result_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/result_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="Action Result"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/result_view">
+
+        <Button
+            android:onClick="onFlatMap"
+            android:layout_width="match_parent"
+            android:text="FlatMap"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:onClick="onConcatMap"
+            android:layout_width="match_parent"
+            android:text="ConcatMap"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:onClick="onInterval"
+            android:layout_width="match_parent"
+            android:text="Interval"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:onClick="onTestAction"
+            android:layout_width="match_parent"
+            android:text="TestAction"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>

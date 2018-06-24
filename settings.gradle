@@ -1,1 +1,2 @@
-include ':RxJava2', ':RxJava'
+include ':RxJava2'
+include ':RxJava'
