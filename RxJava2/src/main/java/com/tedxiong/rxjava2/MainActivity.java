@@ -9,8 +9,7 @@ import com.tedxiong.rxjava2.action.BaseAction;
 import com.tedxiong.rxjava2.action.ConcatMapAction;
 import com.tedxiong.rxjava2.action.FlatMapAction;
 import com.tedxiong.rxjava2.action.IntervalAction;
-import com.tedxiong.rxjava2.network.action.NetworkAction1;
-import com.tedxiong.rxjava2.network.action.NetworkAction2;
+import com.tedxiong.rxjava2.network.action.NetworkZipAction;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements BaseAction.Action
     }
 
     public void onTestAction(View view){
-        new NetworkAction2(this).run();
+        new NetworkZipAction(this).run();
     }
 
     @Override
